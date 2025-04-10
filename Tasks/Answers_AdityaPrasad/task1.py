@@ -1,5 +1,5 @@
 import cv2
-number_of_black_pixels = 0
+number_of_non_white_pixels = 0
 
 img = cv2.imread('C:/Users/adity/OneDrive/Desktop/Task1.png')
 size = img.shape
@@ -12,4 +12,4 @@ for i in range(height):
             number_of_black_pixels += 1
             print("Black pixel found at: ", i, j)
 
-print("Total number of black pixels: ", number_of_black_pixels)
+print("Total number of black pixels: ", number_of_non_white_pixels)

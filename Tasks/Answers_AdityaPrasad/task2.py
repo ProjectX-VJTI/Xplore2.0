@@ -10,3 +10,5 @@ for i in range(img.shape[1]):
         print("-", end="")
     else: 
         print(" ", end="")
+        
+# PS the morse code says "XFACTOR"

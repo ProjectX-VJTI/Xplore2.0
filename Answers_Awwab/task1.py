@@ -1,5 +1,5 @@
 import cv2 as cv
-img = cv.imread("Task1.png")
+img = cv.imread("Task1 copy.png")
 answer =[]
 count =0
 for i in range(img.shape[0]):
@@ -11,6 +11,5 @@ for i in range(img.shape[0]):
 
 print(f"Count of non white pixels is:{count} ")
 print("Positions of pixels are: ")
-for i in range(answer):
-    y,x = answer[i]
+for y,x in answer:
     print(f"{x} {y}")

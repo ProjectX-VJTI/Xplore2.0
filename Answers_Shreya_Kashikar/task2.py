@@ -1,0 +1,13 @@
+import numpy as np
+import cv2 as cv
+img=cv.imread('Task2.png', cv.IMREAD_GRAYSCALE)
+if img is None:
+    print("Error: Image not found or unable to load.")
+    exit()
+
+morse_array = np.where(img == 255, '.',
+                   np.where(img == 0, '-', 
+                   np.where((img >= 120) & (img <= 220), ' ', '')))
+
+morse_code = ''.join(morse_array)
+print(morse_code)

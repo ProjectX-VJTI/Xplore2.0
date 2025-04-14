@@ -10,7 +10,7 @@ for y in range(image.shape[0]):
          morse_code+="-"
       elif image[y][x]==255:
          morse_code+="."
-      elif image[y][x] in range(120,220):
+      elif image[y][x] in range(120,221):
          morse_code+=" "
 
 print(morse_code)

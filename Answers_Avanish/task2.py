@@ -1,6 +1,6 @@
 import cv2 
 
-image = cv2.imread("D:\OPEN CV\OPEN CV Workshop\OPENCV TASKS\Answers_Avanish\OPENCV\Answers_Avanish\Task2.png",cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("D:/OPEN CV/OPEN CV Workshop/OPENCV TASKS/Answers_Avanish/OPENCV/Images/Task2.png",cv2.IMREAD_GRAYSCALE)
 
 row = image[0]
 

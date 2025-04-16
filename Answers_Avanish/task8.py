@@ -4,7 +4,7 @@ import numpy as np
 #as far as i remember we used something something like this for the cloth task and the pen detection task using webcam on the 2nd and 3rd day respectively
 
 # why is it like that when we put \ sometimes in the path it works while sometimes when we put / in the path it works sometimes?
-image = cv2.imread("D:/OPEN CV/OPEN CV Workshop/OPENCV TASKS/Answers_Avanish/OPENCV/Answers_Avanish/ball.png")
+image = cv2.imread("D:/OPEN CV/OPEN CV Workshop/OPENCV TASKS/Answers_Avanish/OPENCV/Images/ball.png")
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
 #here, i used 2 types of ranges since single mai it was not detecting

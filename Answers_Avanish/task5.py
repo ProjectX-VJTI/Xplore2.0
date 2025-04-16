@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-img = cv2.imread("D:\OPEN CV\OPEN CV Workshop\OPENCV TASKS\Answers_Avanish\OPENCV\Images\Task5.png")
+img = cv2.imread("D:\OPEN CV\OPEN CV Workshop\OPENCV TASKS\Answers_Avanish\OPENCV\Answers_Avanish\Task5.png")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 _, thresh = cv2.threshold(gray, 254, 255, cv2.THRESH_BINARY_INV)

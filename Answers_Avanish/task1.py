@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 #ahhhh this step tooo ahhhhhh,, read the image and already convert in and read it in gray form cause we dont want 3 diff channels ka scene n all that
-img = cv2.imread("D:\OPEN CV\OPEN CV Workshop\OPENCV TASKS\Answers_Avanish\OPENCV\Images\Task1.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("D:\OPEN CV\OPEN CV Workshop\OPENCV TASKS\Answers_Avanish\OPENCV\Answers_Avanish\Task1.png", cv2.IMREAD_GRAYSCALE)
 #in the above one i had to put the path directly cause just the name of the image file gave error.
 
 

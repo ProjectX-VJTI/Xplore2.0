@@ -5,16 +5,16 @@ if img is None:
     print("Error: Image not found or unable to load.")
     exit()
 
-ret, thresh = cv.threshold(img, 180, 255, cv.THRESH_BINARY)
-contours,hierarchy=cv.findContours(thresh,cv.RETR_TREE,cv.CHAIN_APPROX_SIMPLE)
-area_max=0
-for cnt in contours:
-    epsilon = 0.02 * cv.arcLength(cnt, True)
-    approx = cv.approxPolyDP(cnt, epsilon, True)
-    if len(approx) == 4:
-        x, y, w, h = cv.boundingRect(approx)
-        ratio = float(w) / h
-        area = cv.contourArea(approx)
-        if area<50000 and 0.95 <= ratio <= 1.05:
-                area_max = max(area_max, area)
-print(area_max)
+ret,binary= cv.threshold(img,127,255,cv.THRESH_BINARY)
+max=0
+for i in range(binary.shape[0]):
+    side=0
+    for j in range(binary.shape[1]):
+        if binary[i][j]==0:
+            side+=1
+        else:
+            if side>max:
+                max=side
+
+print(max**2)
+            

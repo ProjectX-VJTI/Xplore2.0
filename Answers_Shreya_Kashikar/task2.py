@@ -5,9 +5,10 @@ if img is None:
     print("Error: Image not found or unable to load.")
     exit()
 
-morse_array = np.where(img == 255, '.',
-                   np.where(img == 0, '-', 
-                   np.where((img >= 120) & (img <= 220), ' ', '')))
+flat = img.flatten()
+morse_array = np.where(flat == 255, '.',
+                   np.where(flat == 0, '-', 
+                   np.where((flat >= 120) & (flat <= 220), ' ', '')))
 
 morse_code = ''.join(morse_array)
 print(morse_code)

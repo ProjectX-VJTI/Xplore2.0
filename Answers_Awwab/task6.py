@@ -22,7 +22,7 @@ gray = cv.bitwise_and(img, 255 - mask3)
 
 # red masked output
 out = gray + red
-
+cv.imshow('mask', mask3)
 cv.imshow('red', red)
 cv.imshow('gray', gray)
 cv.imshow("final_output.png", out)

@@ -1,3 +1,10 @@
+import cv2 as cv
+from google.colab.patches import cv2_imshow
+import numpy as np
+
+from google.colab import files
+uploaded = files.upload()
+
 # Import image into variable img
 img4 = cv.imread("Task4.png")
 
